@@ -359,7 +359,7 @@ body {
     font-weight: lighter;
   }
 
-  .baloons img { width: 75px; }
+  .baloons img { width: clamp(90px, 32vw, 140px); }
 
   /* Make circle decorations lighter for mobile */
   .eight svg { width: 16px; }
