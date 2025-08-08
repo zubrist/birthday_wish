@@ -142,8 +142,7 @@ body {
 .baloons img {
   display: inline-block;
   position: absolute;
-  width: 140px; /* set a consistent base size */
-  height: auto;
+  /* reverted: removed fixed width/height so SVG/intrinsic size is used */
 }
 
 .baloons img:nth-child(even) {
@@ -358,8 +357,6 @@ body {
     font-size: 1.5rem;
     font-weight: lighter;
   }
-
-  .baloons img { width: clamp(90px, 32vw, 140px); }
 
   /* Make circle decorations lighter for mobile */
   .eight svg { width: 16px; }
